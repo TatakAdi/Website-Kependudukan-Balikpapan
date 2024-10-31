@@ -10,8 +10,8 @@ function Header() {
   const navFAQ = useState("FAQ");
   return (
     <>
-      <header className="header">
-        <div className="Logo">
+      <header className="header px-[3%]">
+        <div className="Logo ">
           <div className="Judul">
             <p id="subtitle">Pemerintah Kota</p>
             <p id="title">Balikpapan</p>
