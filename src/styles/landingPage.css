@@ -4,6 +4,7 @@
   display: flex;
   justify-content: space-between;
   padding: 20px 0;
+  margin-top: 50px;
   /* width: 100%; */
 }
 
@@ -65,7 +66,7 @@
 
 #VisiMisi {
   font-family: "Koulen";
-  max-width: 350px;
+  max-width: 400px;
   margin-top: 70px;
   margin-right: 30px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -112,4 +113,38 @@
   justify-content: space-between;
   padding: 0 45px;
   margin-top: 235px;
+}
+
+.Berita {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #f6f4f4;
+  margin: 150px 0 0;
+  padding: 10px 75px 60px;
+}
+
+.Berita h3 {
+  text-align: center;
+  font-family: "Koulen";
+  font-size: 2rem;
+}
+
+.Berita-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.toPageBerita {
+  align-self: center;
+  width: 200px;
+  height: 50px;
+  margin-top: 60px;
+  border-radius: 40px;
+  border: none;
+  background-color: #806bb4;
+  font-family: "Koulen", sans-serif;
+  font-size: 1.1rem;
+  color: #fff;
+  cursor: pointer;
 }

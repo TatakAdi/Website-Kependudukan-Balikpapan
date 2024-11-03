@@ -1,6 +1,7 @@
 import fotoTest from "./assets/Coding 3.jpg";
 import Header from "./Components/Header";
 import FormBox from "./Components/formBox";
+import BoxBerita from "./Components/berita";
 import "./styles/landingPage.css";
 import "./styles/tailwind.css";
 
@@ -57,7 +58,24 @@ function mainpage() {
           <FormBox name="S.K. Pindah Luar Negeri" />
           <FormBox name="Akta Perceraian" />
         </div>
-        <div className="Berita"></div>
+        <div className="Berita">
+          <h3>Berita</h3>
+          <div className="Berita-container">
+            <BoxBerita
+              title="Lorem ipsum dolor sit amet"
+              isi="Lorem ipsum dolor sit amet consectetur. Vitae feugiat morbi at pellentesque sed egestas lacus interdum rhoncus. Duis tincidunt nibh malesuada id ut aliquet egestas massa."
+            />
+            <BoxBerita
+              title="Lorem ipsum dolor sit amet"
+              isi="Lorem ipsum dolor sit amet consectetur. Vitae feugiat morbi at pellentesque sed egestas lacus interdum rhoncus. Duis tincidunt nibh malesuada id ut aliquet egestas massa."
+            />
+            <BoxBerita
+              title="Lorem ipsum dolor sit amet"
+              isi="Lorem ipsum dolor sit amet consectetur. Vitae feugiat morbi at pellentesque sed egestas lacus interdum rhoncus. Duis tincidunt nibh malesuada id ut aliquet egestas massa."
+            />
+          </div>
+          <button className="toPageBerita">Selengkapnya</button>
+        </div>
         <div className="FAQ"></div>
       </main>
     </>
