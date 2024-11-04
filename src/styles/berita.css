@@ -1,79 +1,50 @@
-@import url("https://fonts.googleapis.com/css2?family=Koulen&family=Odor+Mean+Chey&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Koulen&family=Odor+Mean+Chey&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
-.container {
-  color: #333;
-  text-align: center;
-  margin-top: 80px;
+.kotakBerita {
+  max-width: 350px;
+  background-color: #d9d9d9;
+  border-radius: 40px;
+  position: relative;
+  overflow: hidden;
 }
 
-.main {
-  display: flex;
-  justify-content: center;
-  padding: 20px;
-  gap: 20px; 
-}
-
-.largeCard {
-  flex: 0 0 55%; 
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.smallCards {
-  display: grid;
-  grid-template-columns: 1fr 1fr; 
-  gap: 10px; 
-}
-
-.card {
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 10px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  background-color: #DADDEB;
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: 200px; 
-}
-
-.cardTitle {
-  font-weight: bold;
-  font-size: 18px;
-  margin-bottom: 10px;
-}
-
-.image {
+.img-container-berita {
   width: 100%;
-  border-radius: 8px;
-  margin-bottom: 10px;
+  overflow: hidden;
 }
 
-.link {
-  color: #859F3D;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 16px;
-  margin-top: auto; 
+.img-container-berita img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
 }
 
-.pagination {
-  margin-top: auto;
+.IsiBerita {
+  padding: 0 20px 5px 20px;
+  font-family: "Koulen", sans-serif;
+  line-height: 1;
 }
 
-.paginationButton {
-  background-color: #DADDEB;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
+.IsiBerita h4 {
+  font-size: 1.2rem;
+  margin: 20px 0;
+}
+
+.IsiBerita p {
+  text-align: justify;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  margin: 20px 0;
+}
+
+.IsiBerita h6 {
+  font-size: 1.2rem;
   cursor: pointer;
-  margin: 5px;
-  font-weight: bold;
+  color: #2d9518;
+  margin-bottom: 40px;
 }
 
-.paginationButton:hover {
-  background-color: #DADDEB;
+.IsiBerita h6:hover {
+  color: #806bb4;
 }
