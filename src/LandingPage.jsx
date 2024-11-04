@@ -2,6 +2,7 @@ import fotoTest from "./assets/Coding 3.jpg";
 import Header from "./Components/Header";
 import FormBox from "./Components/formBox";
 import BoxBerita from "./Components/berita";
+import faqBox from "./Components/faqBox";
 import "./styles/landingPage.css";
 import "./styles/tailwind.css";
 
@@ -76,7 +77,10 @@ function mainpage() {
           </div>
           <button className="toPageBerita">Selengkapnya</button>
         </div>
-        <div className="FAQ"></div>
+        <div className="FAQ">
+          <h5 id="FAQTitle">Frequently Asked Question</h5>
+          <faqBox />
+        </div>
       </main>
     </>
   );
