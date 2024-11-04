@@ -28,18 +28,23 @@
 
 .IsiBerita h4 {
   font-size: 1.2rem;
-  margin-bottom: 0;
+  margin: 20px 0;
 }
 
 .IsiBerita p {
   text-align: justify;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
+  margin: 20px 0;
 }
 
 .IsiBerita h6 {
   font-size: 1.2rem;
   cursor: pointer;
   color: #2d9518;
-  margin-bottom: 25px;
+  margin-bottom: 40px;
+}
+
+.IsiBerita h6:hover {
+  color: #806bb4;
 }
