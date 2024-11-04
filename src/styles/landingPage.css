@@ -4,7 +4,8 @@
   display: flex;
   justify-content: space-between;
   padding: 20px 0;
-  width: 100%;
+  margin-top: 50px;
+  /* width: 100%; */
 }
 
 #AboutUs {
@@ -34,10 +35,14 @@
 }
 
 .AboutUs {
+  width: 200px;
+  height: 50px;
   font-family: "Koulen";
+  font-size: 1.3rem;
   border: none;
   background-color: #806bb4;
   padding: 5px 15px;
+  margin-top: 25px;
   border-radius: 10px;
   color: #fff;
   cursor: pointer;
@@ -48,24 +53,24 @@
   width: 8px;
   height: 8px;
   padding-right: 5px;
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 .Arrow::after {
   content: "";
   position: absolute;
   border: solid white;
-  border-width: 2px 2px 0 0;
+  border-width: 5px 5px 0 0;
   display: inline-block;
-  padding: 3px;
+  padding: 5px;
   transform: rotate(45deg);
-  top: 7px;
+  top: 11px;
   left: 1.8px;
 }
 
 #VisiMisi {
   font-family: "Koulen";
-  max-width: 350px;
+  max-width: 400px;
   margin-top: 70px;
   margin-right: 30px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -104,4 +109,55 @@
   line-height: 1.5;
   margin-bottom: 10px;
   text-align: justify;
+}
+
+.FormBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 45px;
+  margin-top: 235px;
+}
+
+.Berita {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #f6f4f4;
+  margin: 150px 0 0;
+  padding: 10px 75px 60px;
+}
+
+.Berita h3 {
+  text-align: center;
+  font-family: "Koulen";
+  font-size: 2rem;
+}
+
+.Berita-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.toPageBerita {
+  align-self: center;
+  width: 200px;
+  height: 50px;
+  margin-top: 60px;
+  border-radius: 40px;
+  border: none;
+  background-color: #806bb4;
+  font-family: "Koulen", sans-serif;
+  font-size: 1.1rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* .FAQ {
+} */
+
+#FAQTitle {
+  font-family: "Koulen", sans-serif;
+  font-size: 1.9rem;
+  margin-left: 30px;
 }
