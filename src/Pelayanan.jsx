@@ -60,7 +60,7 @@ const Pelayanan = () => {
           />
         </div>
         <div>
-          <label className="flex justify-start block text-sm font-medium text-gray-700">
+          <label className="flex justify-start text-sm font-medium text-gray-700">
             Nama Orang Tua Ibu
           </label>
           <input
@@ -70,13 +70,12 @@ const Pelayanan = () => {
           />
         </div>
 
-        {/* Row for Jenis Kelamin and Usia */}
         <div className="flex gap-6 col-span-2">
-          <div className="w-1/2">
+          <div className="w-full sm:w-1/2">
             <label className="flex justify-start text-sm font-medium text-gray-700">
               Jenis Kelamin
             </label>
-            <div className="mt-1 flex items-center space-x-4">
+            <div className="mt-1 flex sm:flex-row flex-col items-start sm:items-center sm:space-x-4 space-y-2 sm:space-y-0">
               <label className="flex items-center">
                 <input
                   type="radio"
@@ -96,7 +95,7 @@ const Pelayanan = () => {
             </div>
           </div>
           <div className="w-1/2">
-            <label className="flex justify-start block text-sm font-medium text-gray-700">
+            <label className="flex justify-start text-sm font-medium text-gray-700">
               Usia
             </label>
             <div className="flex items-center mt-1 space-x-2">
@@ -121,7 +120,7 @@ const Pelayanan = () => {
         </div>
 
         <div className="col-span-2 w-1/2">
-          <label className="flex justify-start block text-sm font-medium text-gray-700">
+          <label className="flex justify-start text-sm font-medium text-gray-700">
             Alamat
           </label>
           <textarea
