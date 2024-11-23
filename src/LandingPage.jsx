@@ -56,7 +56,7 @@ function mainpage() {
           <FormBox name="Akta Kelahiran" />
           <FormBox name="Akta Kematian" />
           <FormBox name="Kartu Keluarga" />
-          <FormBox name="S.K. Pindah Luar Negeri" />
+          <FormBox name="Akta Pernikahan" />
           <FormBox name="Akta Perceraian" />
         </div>
         <div className="Berita">
