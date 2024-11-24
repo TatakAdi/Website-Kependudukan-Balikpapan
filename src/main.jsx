@@ -7,6 +7,6 @@ import DataStatistik from "./DataStatistik.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <MainPage />
+    <DataStatistik />
   </StrictMode>
 );

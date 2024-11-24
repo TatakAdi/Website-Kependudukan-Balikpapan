@@ -1,5 +1,6 @@
 import React from "react";
 import Chart from "react-apexcharts";
+import Header from "./Components/Header";
 
 const DataStatistik = () => {
   const barChartOptions = {
@@ -55,29 +56,32 @@ const DataStatistik = () => {
   const pieChartSeries = [85, 8, 5, 1, 0.5, 0.5];
 
   return (
-    <div className="container mx-auto p-6 mt-20">
-      <div className="lg:w-full bg-white rounded-lg overflow-hidden shadow-md">
-        <div className="mb-10">
+    <>
+      <Header />
+      <div className="container mx-auto p-6 mt-20">
+        <div className="lg:w-full bg-white rounded-lg overflow-hidden shadow-md">
+          <div className="mb-10">
+            <Chart
+              options={barChartOptions}
+              series={barChartSeries}
+              type="bar"
+              height={350}
+            />
+          </div>
+        </div>
+        <div className="lg:w-full bg-white rounded-lg overflow-hidden shadow-md mt-10">
+          <h2 className="text-center text-lg font-bold mb-4">
+            Data Berdasarkan Agama
+          </h2>
           <Chart
-            options={barChartOptions}
-            series={barChartSeries}
-            type="bar"
-            height={350}
+            options={pieChartOptions}
+            series={pieChartSeries}
+            type="pie"
+            height={300}
           />
         </div>
       </div>
-      <div className="lg:w-full bg-white rounded-lg overflow-hidden shadow-md mt-10">
-        <h2 className="text-center text-lg font-bold mb-4">
-          Data Berdasarkan Agama
-        </h2>
-        <Chart
-          options={pieChartOptions}
-          series={pieChartSeries}
-          type="pie"
-          height={300}
-        />
-      </div>
-    </div>
+    </>
   );
 };
 
