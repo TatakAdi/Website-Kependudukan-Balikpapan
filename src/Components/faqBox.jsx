@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "../styles/faqBox.css";
 
-function faqItem(props) {
+function FaqItem({ question, answer }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleAnswer = () => {
@@ -9,44 +9,43 @@ function faqItem(props) {
   };
 
   return (
-    <div className="faQuestion">
+    <div className={`faq-item ${isOpen ? "open" : ""}`}>
       <div className="question" onClick={toggleAnswer}>
-        <span className="symbols">+</span>
-        <h3>{props.question}</h3>
+        <span className="symbol">{isOpen ? "-" : "+"}</span>
+        <h3>{question}</h3>
       </div>
-      {isOpen && <p className="answer">{props.answer}</p>}
+      <div className={`answer-container ${isOpen ? "visible" : ""}`}>
+        <div className="answer">
+          <div className="vertical-line"></div>
+          <p>{answer}</p>
+        </div>
+      </div>
     </div>
   );
 }
 
-function faqBox() {
+function FaqBox() {
   const faqData = [
     {
-      question: "Pertanyaan Pertama?",
-      answer: "Jawaban untuk pertanyaan pertama",
-    },
-    { question: "Pertanyaan Kedua?", answer: "Jawaban untuk pertanyaan kedua" },
-    {
-      question: "Pertanyaan ketiga?",
-      answer: "Jawaban untuk pertanyaan ketiga",
+      question: "Bagaimana cara untuk pengurusan KIA?",
+      answer:
+        "Silakan ajukan secara online melalui capil.balikpapan.go.id/layanan, pilih belum punya akun jika belum pernah melakukan pelayanan, kemudian pilih menu 'Kartu Identitas Anak'.",
     },
     {
-      question: "Pertanyaan keempat?",
-      answer: "Jawaban untuk pertanyaan keempat",
-    },
-    {
-      question: "Pertanyaan kelima?",
-      answer: "Jawaban untuk pertanyaan kelima",
+      question:
+        "Bagaimana jika di akta kelahiran terdapat kesalahan dalam penulisan nama orang tua?",
+      answer:
+        "Anda dapat mengajukan revisi data ke Disdukcapil setempat dengan membawa dokumen pendukung.",
     },
   ];
 
   return (
-    <div>
+    <div className="faq-container">
       {faqData.map((item, index) => (
-        <faqItem key={index} question={item.question} answer={item.answer} />
+        <FaqItem key={index} question={item.question} answer={item.answer} />
       ))}
     </div>
   );
 }
 
-export default faqBox;
+export default FaqBox;

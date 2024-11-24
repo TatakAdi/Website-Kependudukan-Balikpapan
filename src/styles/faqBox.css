@@ -1,24 +1,78 @@
-.faQuestion {
-  margin-bottom: 16px;
+@import url("https://fonts.googleapis.com/css2?family=Koulen&family=Odor+Mean+Chey&display=swap");
+
+/* Container untuk FAQ */
+.faq-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px 15px;
+  font-family: "Koulen", sans-serif;
 }
 
+/* Item FAQ */
+.faq-item {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+  transition: all 0.8s ease-in-out;
+}
+
+/* .faq-item.open .question {
+  color: #5e3dbb;
+} */
+
+/* Header pertanyaan */
 .question {
-  cursor: pointer;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
-.symbols {
-  font-size: 24px;
-  color: purple;
-  margin-right: 8px;
-}
-
-h3 {
+.question h3 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
   margin: 0;
 }
 
+.symbol {
+  font-size: 2rem;
+  font-weight: normal;
+  margin-right: 10px;
+  color: #5e3dbb; /* Warna biru untuk simbol */
+  transition: transform 0.8s ease-in-out;
+}
+
+.symbol.open {
+  color: #5e3dbb; /* Warna merah saat terbuka */
+  transform: rotate(180deg);
+}
+
+.answer-container {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+/* Jawaban */
 .answer {
-  margin-left: 32px;
-  color: gray;
+  display: flex;
+  align-items: flex-start;
+  padding-left: 20px;
+}
+
+.vertical-line {
+  width: 3px;
+  height: 100%;
+  background-color: #5e3dbb;
+  margin-right: 10px;
+}
+
+.answer p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.answer-container.visible {
+  max-height: 200px; /* Sesuaikan sesuai kebutuhan */
 }
