@@ -51,12 +51,12 @@ function mainpage() {
           </div>
         </div>
         <div className="FormBox ">
-          <FormBox name="KTP-EL" />
-          <FormBox name="Akta Kelahiran" />
-          <FormBox name="Akta Kematian" />
-          <FormBox name="Kartu Keluarga" />
-          <FormBox name="Akta Pernikahan" />
-          <FormBox name="Akta Perceraian" />
+          <FormBox name="KTP-EL" to="/formEKTP" />
+          <FormBox name="Akta Kelahiran" to="/formAktaLahir" />
+          <FormBox name="Akta Kematian" to="/formAktaMati" />
+          <FormBox name="Kartu Keluarga" to="/formKK" />
+          <FormBox name="Akta Pernikahan" to="/formAktaNikah" />
+          <FormBox name="Akta Perceraian" to="/formAktaCerai" />
         </div>
         <div className="Berita">
           <h3>Berita</h3>

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Header from "./Components/Header";
-import Header from "./Components/Header";
 
 const Pelayanan = () => {
   const services = [
