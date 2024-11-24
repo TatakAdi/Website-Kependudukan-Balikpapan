@@ -11,6 +11,6 @@ import "./styles/tailwind.css";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <Pelayanan />
+    <MainPage />
   </StrictMode>
 );
