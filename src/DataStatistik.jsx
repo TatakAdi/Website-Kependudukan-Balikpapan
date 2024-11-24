@@ -1,5 +1,6 @@
 import React from "react";
 import Chart from "react-apexcharts";
+import Header from "./Components/Header";
 
 const DataStatistik = () => {
   const barChartOptions = {
@@ -56,6 +57,9 @@ const DataStatistik = () => {
 
   return (
     <div className="container mx-auto p-6 mt-20">
+      <header>
+        <Header />
+      </header>
       <div className="lg:w-full bg-white rounded-lg overflow-hidden shadow-md">
         <div className="mb-10">
           <Chart

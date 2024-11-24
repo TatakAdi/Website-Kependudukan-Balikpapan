@@ -1,11 +1,15 @@
 import React, { useState } from "react";
+import Header from "./Components/Header";
 
 const Pelayanan = () => {
   const [usia, setUsia] = useState(0);
 
   return (
     <div className="w-screen p-8 bg-white rounded-md container mx-auto">
-      <h2 className="flex justify-start text-4xl font-bold mb-6 mt-20 ">
+      <header>
+        <Header />
+      </header>
+      <h2 className="flex justify-start text-4xl font-bold mb-6">
         Nama/Jenis Pelayanan
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

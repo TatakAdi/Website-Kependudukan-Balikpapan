@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Koulen&family=Odor+Mean+Chey&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+.kotakBerita {
+  max-width: 350px;
+  background-color: #d9d9d9;
+  border-radius: 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.img-container-berita {
+  width: 100%;
+  overflow: hidden;
+}
+
+.img-container-berita img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.IsiBerita {
+  padding: 0 20px 5px 20px;
+  font-family: "Koulen", sans-serif;
+  line-height: 1;
+}
+
+.IsiBerita h4 {
+  font-size: 1.2rem;
+  margin: 20px 0;
+}
+
+.IsiBerita p {
+  text-align: justify;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  margin: 20px 0;
+}
+
+.IsiBerita h6 {
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #2d9518;
+  margin-bottom: 40px;
+}
+
+.IsiBerita h6:hover {
+  color: #806bb4;
+}
