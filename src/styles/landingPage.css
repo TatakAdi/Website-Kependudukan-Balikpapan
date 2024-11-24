@@ -16,7 +16,8 @@
 }
 
 #AboutUs h3 {
-  max-width: 400px;
+  text-align: justify;
+  max-width: 250px;
   font-size: 2rem;
   margin-bottom: 10px;
   font-family: "Koulen";
@@ -111,12 +112,19 @@
   text-align: justify;
 }
 
+.FormBox-container h3 {
+  margin-top: 100px;
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Koulen", sans-serif;
+}
+
 .FormBox {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 0 45px;
-  margin-top: 235px;
+  margin-top: 95px;
 }
 
 .Berita {
@@ -132,6 +140,7 @@
   text-align: center;
   font-family: "Koulen";
   font-size: 2rem;
+  padding: 20px 0;
 }
 
 .Berita-container {
@@ -151,10 +160,9 @@
   font-size: 1.1rem;
   color: #fff;
   cursor: pointer;
+  text-align: center;
+  padding-top: 12.5px;
 }
-
-/* .FAQ {
-} */
 
 #FAQTitle {
   font-family: "Koulen", sans-serif;

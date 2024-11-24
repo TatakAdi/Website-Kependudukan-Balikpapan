@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 import fotoTest from "./assets/Coding 3.jpg";
 import Header from "./Components/Header";
 import FormBox from "./Components/formBox";
@@ -31,7 +31,10 @@ function Mainpage() {
       <main>
         <div className="Pengenalan">
           <div id="AboutUs">
-            <h3>Lorem ipsum dolor sit amet consectetur</h3>
+            <h3>
+              Dinas Kependudukan
+              <span className="text-purple-400"> Kota Balikpapan</span>
+            </h3>
             <p>
               Lorem ipsum dolor sit amet consectetur. Volutpat mattis congue
               maecenas sed egestas eget. Luctus velit ac maecenas sed justo
@@ -58,24 +61,26 @@ function Mainpage() {
             <div className="VisiMisi">
               <h5>Visi</h5>
               <p>
-                Lorem ipsum dolor sit amet consectetur. Rutrum quam gravida
-                tincidunt tincidunt.
+                Tertib Administrasi Kependudukan Menuju Penduduk Berkualitas
               </p>
               <h5>Misi</h5>
               <p>
-                Lorem ipsum dolor sit amet consectetur. Rutrum quam gravida
-                tincidunt tincidunt.
+                Mewujudkan Penyeleggaraan Pelayanan Publik Yang Prima Di Bidang
+                Administrasi Kependudukan
               </p>
             </div>
           </div>
         </div>
-        <div className="FormBox ">
-          <FormBox name="KTP-EL" to="/formEKTP" />
-          <FormBox name="Akta Kelahiran" to="/formAktaLahir" />
-          <FormBox name="Akta Kematian" to="/formAktaMati" />
-          <FormBox name="Kartu Keluarga" to="/formKK" />
-          <FormBox name="Akta Pernikahan" to="/formAktaNikah" />
-          <FormBox name="Akta Perceraian" to="/formAktaCerai" />
+        <div className="FormBox-container">
+          <h3 className="">Formulir Pelayanan</h3>
+          <div className="FormBox">
+            <FormBox name="KTP-EL" to="/formEKTP" />
+            <FormBox name="Akta Kelahiran" to="/formAktaLahir" />
+            <FormBox name="Akta Kematian" to="/formAktaMati" />
+            <FormBox name="Kartu Keluarga" to="/formKK" />
+            <FormBox name="Akta Pernikahan" to="/formAktaNikah" />
+            <FormBox name="Akta Perceraian" to="/formAktaCerai" />
+          </div>
         </div>
         <div className="Berita">
           <h3>Berita</h3>
@@ -93,7 +98,9 @@ function Mainpage() {
               isi="Lorem ipsum dolor sit amet consectetur. Vitae feugiat morbi at pellentesque sed egestas lacus interdum rhoncus. Duis tincidunt nibh malesuada id ut aliquet egestas massa."
             />
           </div>
-          <button className="toPageBerita">Selengkapnya</button>
+          <Link to="/berita" className="toPageBerita">
+            Selengkapnya
+          </Link>
         </div>
         <div className="FAQ">
           <h5 id="FAQTitle">Frequently Asked Question</h5>

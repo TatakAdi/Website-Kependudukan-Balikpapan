@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Koulen&family=Odor+Mean+Chey&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Koulen&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Odor+Mean+Chey&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 /* Container untuk FAQ */
 .faq-container {
   width: 100%;
-  max-width: 800px;
-  margin: 20px 15px;
-  font-family: "Koulen", sans-serif;
+  max-width: 1000px;
+  margin: 20px 30px;
+  font-family: "Noto Sans", sans-serif;
 }
 
 /* Item FAQ */
@@ -55,7 +55,7 @@
 /* Jawaban */
 .answer {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   padding-left: 20px;
   height: 50px;
 }
@@ -69,8 +69,9 @@
 
 .answer p {
   margin: 0;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.6;
+  font-weight: 500;
   color: #333;
 }
 
