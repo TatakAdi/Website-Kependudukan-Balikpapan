@@ -32,7 +32,7 @@
   border-radius: 8px;
   padding: 10px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  background-color: #DADDEB;
+  background-color: #D9D9D9;
   text-align: left;
   display: flex;
   flex-direction: column;
@@ -53,7 +53,7 @@
 }
 
 .link {
-  color: #859F3D;
+  color: #2D9518;
   text-decoration: none;
   font-weight: bold;
   font-size: 16px;
@@ -65,7 +65,7 @@
 }
 
 .paginationButton {
-  background-color: #DADDEB;
+  background-color: #D9D9D9;
   border: none;
   border-radius: 5px;
   padding: 10px 20px;
@@ -75,5 +75,5 @@
 }
 
 .paginationButton:hover {
-  background-color: #DADDEB;
+  background-color: #D9D9D9;
 }
