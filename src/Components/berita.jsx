@@ -1,5 +1,6 @@
 import fotoTest from "../assets/Coding 3.jpg";
 import "../styles/berita.css";
+import { Link } from "react-router-dom";
 
 function berita(props) {
   return (
@@ -10,7 +11,9 @@ function berita(props) {
       <div className="IsiBerita">
         <h4>{props.title}</h4>
         <p>{props.isi}</p>
-        <h6>Baca Selengkapnya</h6>
+        <h6>
+          <Link to="/berita/berita-konten">Baca Selengkapnya</Link>
+        </h6>
       </div>
     </div>
   );

@@ -56,32 +56,32 @@ const DataStatistik = () => {
   const pieChartSeries = [85, 8, 5, 1, 0.5, 0.5];
 
   return (
-    <>
-      <Header />
-      <div className="container mx-auto p-6 mt-20">
-        <div className="lg:w-full bg-white rounded-lg overflow-hidden shadow-md">
-          <div className="mb-10">
-            <Chart
-              options={barChartOptions}
-              series={barChartSeries}
-              type="bar"
-              height={350}
-            />
-          </div>
-        </div>
-        <div className="lg:w-full bg-white rounded-lg overflow-hidden shadow-md mt-10">
-          <h2 className="text-center text-lg font-bold mb-4">
-            Data Berdasarkan Agama
-          </h2>
+    <div className="container mx-auto p-6 mt-20">
+      <header>
+        <Header />
+      </header>
+      <div className="lg:w-full bg-white rounded-lg overflow-hidden shadow-md">
+        <div className="mb-10">
           <Chart
-            options={pieChartOptions}
-            series={pieChartSeries}
-            type="pie"
-            height={300}
+            options={barChartOptions}
+            series={barChartSeries}
+            type="bar"
+            height={350}
           />
         </div>
       </div>
-    </>
+      <div className="lg:w-full bg-white rounded-lg overflow-hidden shadow-md mt-10">
+        <h2 className="text-center text-lg font-bold mb-4">
+          Data Berdasarkan Agama
+        </h2>
+        <Chart
+          options={pieChartOptions}
+          series={pieChartSeries}
+          type="pie"
+          height={300}
+        />
+      </div>
+    </div>
   );
 };
 

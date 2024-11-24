@@ -10,11 +10,11 @@
   display: flex;
   justify-content: center;
   padding: 20px;
-  gap: 20px; 
+  gap: 20px;
 }
 
 .largeCard {
-  flex: 0 0 55%; 
+  flex: 0 0 55%;
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -23,21 +23,21 @@
 
 .smallCards {
   display: grid;
-  grid-template-columns: 1fr 1fr; 
-  gap: 10px; 
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
 }
 
 .card {
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 10px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  background-color: #D9D9D9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #daddeb;
   text-align: left;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 200px; 
+  min-height: 200px;
 }
 
 .cardTitle {
@@ -53,11 +53,11 @@
 }
 
 .link {
-  color: #2D9518;
+  color: #859f3d;
   text-decoration: none;
   font-weight: bold;
   font-size: 16px;
-  margin-top: auto; 
+  margin-top: auto;
 }
 
 .pagination {
@@ -65,7 +65,7 @@
 }
 
 .paginationButton {
-  background-color: #D9D9D9;
+  background-color: #daddeb;
   border: none;
   border-radius: 5px;
   padding: 10px 20px;
@@ -75,5 +75,5 @@
 }
 
 .paginationButton:hover {
-  background-color: #D9D9D9;
+  background-color: #daddeb;
 }

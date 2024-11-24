@@ -1,6 +1,7 @@
 import React from "react";
+import "./styles/BeritaPage.css";
 import Header from "./Components/Header";
-import "./styles/beritaPage.css";
+import { Link } from "react-router-dom";
 
 const cardData = [
   {
@@ -54,32 +55,32 @@ const Card = ({ title, description, link, image }) => (
     <img src={image} alt="Content" className="image" />
     <h3 className="cardTitle">{title}</h3>
     <p>{description}</p>
-    <a href={link} className="link">
+    <Link to="/berita/berita-konten" className="link">
       Baca Selengkapnya...
-    </a>
+    </Link>
   </div>
 );
 
 const BeritaPage = () => (
-  <>
-    <Header />
-    <div className="container">
-      <main className="main">
-        <div className="largeCard">
-          <Card {...cardData[0]} />
-          <div className="pagination">
-            <button className="paginationButton">⇦ Sebelumnya</button>
-            <button className="paginationButton">Selanjutnya ⇨</button>
-          </div>
+  <div className="container">
+    <header>
+      <Header />
+    </header>
+    <main className="main">
+      <div className="largeCard">
+        <Card {...cardData[0]} />
+        <div className="pagination">
+          <button className="paginationButton">⇦ Sebelumnya</button>
+          <button className="paginationButton">Selanjutnya ⇨</button>
         </div>
-        <div className="smallCards">
-          {cardData.slice(1).map((data, index) => (
-            <Card key={index} {...data} />
-          ))}
-        </div>
-      </main>
-    </div>
-  </>
+      </div>
+      <div className="smallCards">
+        {cardData.slice(1).map((data, index) => (
+          <Card key={index} {...data} />
+        ))}
+      </div>
+    </main>
+  </div>
 );
 
 export default BeritaPage;

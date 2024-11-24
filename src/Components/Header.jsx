@@ -1,39 +1,36 @@
-import { useState } from "react";
 import logoTest from "../assets/logoWebsite.png";
 import "../styles/Header.css";
+import { Link } from "react-router-dom";
 
 function Header() {
-  const navPelayanan = useState("Pelayanan");
-  const navBerita = useState("Berita");
-  const navRegulasi = useState("Regulasi");
-  const navData = useState("Data Statistik");
-  const navFAQ = useState("FAQ");
   return (
     <>
       <header className="header px-[3%]">
-        <div className="Logo ">
-          <div className="Judul">
-            <p id="subtitle">Pemerintah Kota</p>
-            <p id="title">Balikpapan</p>
-          </div>
-          <img src={logoTest} alt="Logo Website" id="Logo" />
+        <div className="Logo">
+          <Link to="/" className="Logo">
+            <div className="Judul">
+              <p id="subtitle">Pemerintah Kota</p>
+              <p id="title">Balikpapan</p>
+            </div>
+            <img src={logoTest} alt="Logo Website" id="Logo" />
+          </Link>
         </div>
         <div className="NavBar">
-          <a href="" className="Nav">
-            {navPelayanan}
-          </a>
-          <a href="" className="Nav">
-            {navBerita}
-          </a>
-          <a href="" className="Nav">
-            {navRegulasi}
-          </a>
-          <a href="" className="Nav">
-            {navData}
-          </a>
-          <a href="" className="Nav">
-            {navFAQ}
-          </a>
+          <Link to="/" className="Nav">
+            Pelayanan
+          </Link>
+          <Link to="/berita" className="Nav">
+            Berita
+          </Link>
+          <Link to="/regulasi" className="Nav">
+            Regulasi
+          </Link>
+          <Link to="/data-statistik" className="Nav">
+            Data Statistik
+          </Link>
+          <Link to="/faq" className="Nav">
+            FAQ
+          </Link>
         </div>
       </header>
     </>
