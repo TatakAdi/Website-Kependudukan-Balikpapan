@@ -4,7 +4,6 @@ import FormBox from "./Components/formBox";
 import BoxBerita from "./Components/berita";
 import FaqBox from "./Components/faqBox";
 import "./styles/landingPage.css";
-import "./styles/tailwind.css";
 
 function mainpage() {
   return (

@@ -37,6 +37,7 @@ function FaqBox() {
       answer:
         "Anda dapat mengajukan revisi data ke Disdukcapil setempat dengan membawa dokumen pendukung.",
     },
+    {},
   ];
 
   return (
