@@ -4,6 +4,7 @@ import MainPage from "../LandingPage";
 import Pelayanan from "../Pelayanan";
 import BeritaKonten from "../BeritaKonten";
 import PageBerita from "../PageBerita";
+import Regulasi from "../Regulasi";
 import DataStatistik from "../DataStatistik";
 import PelayananAktaCerai from "../PelayananAktaCerai";
 import PelayananAktaLahir from "../PelayananAktaLahir";
@@ -20,6 +21,7 @@ const AppRoutes = () => {
         <Route path="/pelayanan" element={<Pelayanan />} />
         <Route path="/berita/berita-konten" element={<BeritaKonten />} />
         <Route path="/berita" element={<PageBerita />} />
+        <Route path="regulasi" element={<Regulasi />} />
         <Route path="/data-statistik" element={<DataStatistik />} />
         <Route path="/formAktaCerai" element={<PelayananAktaCerai />} />
         <Route path="/formAktaLahir" element={<PelayananAktaLahir />} />
