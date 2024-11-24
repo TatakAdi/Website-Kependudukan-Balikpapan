@@ -1,3 +1,5 @@
+import React, { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import fotoTest from "./assets/Coding 3.jpg";
 import Header from "./Components/Header";
 import FormBox from "./Components/formBox";
@@ -5,7 +7,24 @@ import BoxBerita from "./Components/berita";
 import FaqBox from "./Components/faqBox";
 import "./styles/landingPage.css";
 
-function mainpage() {
+function Mainpage() {
+  const location = useLocation(); // Menangkap informasi tentang URL saat ini
+
+  useEffect(() => {
+    // Fungsi untuk scroll ke elemen FAQ
+    const scrollToFAQ = () => {
+      const faqContainer = document.getElementById("FAQ-container");
+      if (faqContainer) {
+        faqContainer.scrollIntoView({ behavior: "smooth" });
+      }
+    };
+
+    // Jika hash ada di URL, scroll ke FAQ
+    if (location.hash === "#FAQ-container") {
+      scrollToFAQ();
+    }
+  }, [location]);
+
   return (
     <>
       <Header />
@@ -87,4 +106,4 @@ function mainpage() {
   );
 }
 
-export default mainpage;
+export default Mainpage;

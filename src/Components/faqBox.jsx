@@ -41,7 +41,7 @@ function FaqBox() {
   ];
 
   return (
-    <div className="faq-container">
+    <div id="FAQ-container" className="faq-container">
       {faqData.map((item, index) => (
         <FaqItem key={index} question={item.question} answer={item.answer} />
       ))}

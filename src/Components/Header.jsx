@@ -3,6 +3,13 @@ import "../styles/Header.css";
 import { Link } from "react-router-dom";
 
 function Header() {
+  const scrollToFAQ = () => {
+    const faqContainer = document.querySelector(".faq-container");
+    if (faqContainer) {
+      faqContainer.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <>
       <header className="header px-[3%]">
@@ -28,7 +35,7 @@ function Header() {
           <Link to="/data-statistik" className="Nav">
             Data Statistik
           </Link>
-          <Link to="/faq" className="Nav">
+          <Link to="/#FAQ-container" className="Nav">
             FAQ
           </Link>
         </div>
