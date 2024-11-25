@@ -144,7 +144,8 @@ const Pelayanan = () => {
             <div className="flex items-center mt-1 space-x-2">
               <input
                 type="range"
-                min="0"
+                min="17
+                "
                 max="100"
                 value={usia}
                 onChange={(e) => setUsia(e.target.value)}

@@ -1,4 +1,4 @@
-import fotoTest from "../assets/Coding 3.jpg";
+import fotoTest from "../assets/Coding3.jpg";
 import "../styles/berita.css";
 import { Link } from "react-router-dom";
 

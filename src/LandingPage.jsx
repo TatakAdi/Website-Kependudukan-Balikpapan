@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useLocation, Link } from "react-router-dom";
-import fotoTest from "./assets/Coding 3.jpg";
+import fotoTest from "./assets/Coding3.jpg";
 import Header from "./Components/Header";
 import FormBox from "./Components/formBox";
 import BoxBerita from "./Components/berita";

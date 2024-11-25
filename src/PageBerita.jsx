@@ -1,5 +1,6 @@
 import React from "react";
 import "./styles/BeritaPage.css";
+import Coding from "./assets/Coding3.jpg";
 import Header from "./Components/Header";
 import { Link } from "react-router-dom";
 
@@ -9,8 +10,7 @@ const cardData = [
     description:
       "Lorem ipsum dolor sit amet consectetur. Vitae feugiat morbi et pellentesque sed egestas lacus interdum rhoncus. Duis in dui rutrum nibh malesuada id ut augue egestas massa.",
     link: "#",
-    image:
-      "https://landingspage.net/wp-content/uploads/2023/01/web-programming-768x432.jpeg",
+    image: { Coding },
   },
 
   {
@@ -18,8 +18,7 @@ const cardData = [
     description:
       "Lorem ipsum dolor sit amet consectetur. Vitae feugiat morbi et pellentesque sed egestas lacus interdum rhoncus. Duis in dui rutrum nibh malesuada id ut augue egestas massa.",
     link: "#",
-    image:
-      "https://landingspage.net/wp-content/uploads/2023/01/web-programming-768x432.jpeg",
+    image: { Coding },
   },
 
   {
@@ -27,8 +26,7 @@ const cardData = [
     description:
       "Lorem ipsum dolor sit amet consectetur. Vitae feugiat morbi et pellentesque sed egestas lacus interdum rhoncus. Duis in dui rutrum nibh malesuada id ut augue egestas massa.",
     link: "#",
-    image:
-      "https://landingspage.net/wp-content/uploads/2023/01/web-programming-768x432.jpeg",
+    image: { Coding },
   },
 
   {
@@ -36,8 +34,7 @@ const cardData = [
     description:
       "Lorem ipsum dolor sit amet consectetur. Vitae feugiat morbi et pellentesque sed egestas lacus interdum rhoncus. Duis in dui rutrum nibh malesuada id ut augue egestas massa.",
     link: "#",
-    image:
-      "https://landingspage.net/wp-content/uploads/2023/01/web-programming-768x432.jpeg",
+    image: { Coding },
   },
 
   {
@@ -45,8 +42,7 @@ const cardData = [
     description:
       "Lorem ipsum dolor sit amet consectetur. Vitae feugiat morbi et pellentesque sed egestas lacus interdum rhoncus. Duis in dui rutrum nibh malesuada id ut augue egestas massa.",
     link: "#",
-    image:
-      "https://landingspage.net/wp-content/uploads/2023/01/web-programming-768x432.jpeg",
+    image: { Coding },
   },
 ];
 
