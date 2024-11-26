@@ -2,11 +2,12 @@ import fotoTest from "./assets/Coding 3.jpg";
 import Header from "./Components/Header";
 import FormBox from "./Components/formBox";
 import BoxBerita from "./Components/berita";
-import faqBox from "./Components/faqBox";
+import FaqBox from "./Components/faqBox";
+import Footer from "./Components/Footer"; 
 import "./styles/landingPage.css";
 import "./styles/tailwind.css";
 
-function mainpage() {
+function MainPage() {
   return (
     <>
       <Header />
@@ -51,7 +52,8 @@ function mainpage() {
             </div>
           </div>
         </div>
-        <div className="FormBox ">
+
+        <div className="FormBox">
           <FormBox name="KTP-EL" />
           <FormBox name="Akta Kelahiran" />
           <FormBox name="Akta Kematian" />
@@ -59,6 +61,7 @@ function mainpage() {
           <FormBox name="S.K. Pindah Luar Negeri" />
           <FormBox name="Akta Perceraian" />
         </div>
+
         <div className="Berita">
           <h3>Berita</h3>
           <div className="Berita-container">
@@ -77,13 +80,28 @@ function mainpage() {
           </div>
           <button className="toPageBerita">Selengkapnya</button>
         </div>
+
         <div className="FAQ">
-          <h5 id="FAQTitle">Frequently Asked Question</h5>
-          <faqBox />
+          <h5 id="FAQTitle">Frequently Asked Questions</h5>
+          <FaqBox 
+            question="What is your refund policy?"
+            answer="Our refund policy allows for a full refund within 30 days of purchase if you're not satisfied."
+          />
+          <FaqBox 
+            question="How do I contact customer support?"
+            answer="You can contact our customer support via email or through the contact form on our website."
+          />
+          <FaqBox 
+            question="Do you offer international shipping?"
+            answer="Yes, we offer worldwide shipping with additional charges based on the destination."
+          />
         </div>
       </main>
+
+      {/* Footer Ditambahkan di Sini */}
+      <Footer />
     </>
   );
 }
 
-export default mainpage;
+export default MainPage;
