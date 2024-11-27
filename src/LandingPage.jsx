@@ -5,7 +5,7 @@ import Header from "./Components/Header";
 import FormBox from "./Components/formBox";
 import BoxBerita from "./Components/berita";
 import FaqBox from "./Components/faqBox";
-import Footer from "./Components/Footer"; 
+import Footer from "./Components/Footer";
 import "./styles/landingPage.css";
 
 function Mainpage() {
