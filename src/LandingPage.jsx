@@ -5,6 +5,7 @@ import Header from "./Components/Header";
 import FormBox from "./Components/formBox";
 import BoxBerita from "./Components/berita";
 import FaqBox from "./Components/faqBox";
+import Footer from "./Components/Footer"; 
 import "./styles/landingPage.css";
 
 function Mainpage() {
@@ -82,6 +83,7 @@ function Mainpage() {
             <FormBox name="Akta Perceraian" to="/formAktaCerai" />
           </div>
         </div>
+
         <div className="Berita">
           <h3>Berita</h3>
           <div className="Berita-container">
@@ -102,6 +104,7 @@ function Mainpage() {
             Selengkapnya
           </Link>
         </div>
+
         <div className="FAQ">
           <h5 id="FAQTitle">Frequently Asked Question</h5>
           <div className="FAQBox">
@@ -109,6 +112,9 @@ function Mainpage() {
           </div>
         </div>
       </main>
+
+      {/* Footer Ditambahkan di Sini */}
+      <Footer />
     </>
   );
 }

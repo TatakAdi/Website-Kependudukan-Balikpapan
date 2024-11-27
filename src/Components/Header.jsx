@@ -3,12 +3,6 @@ import "../styles/Header.css";
 import { Link } from "react-router-dom";
 
 function Header() {
-  const scrollToFAQ = () => {
-    const faqContainer = document.querySelector(".faq-container");
-    if (faqContainer) {
-      faqContainer.scrollIntoView({ behavior: "smooth" });
-    }
-  };
 
   return (
     <>
