@@ -8,7 +8,11 @@ const Pelayanan = () => {
       subtitles: [
         {
           subtitle: "Pembuatan KTP Elektronik Baru",
-          requirements: ["Fotokopi Kartu Keluarga"],
+          requirements: [
+            "Fotokopi Kartu Keluarga",
+            "Fotokopi Akta Kelahiran",
+            "Surat pengantar dari RT/RW Tempat Tinggal",
+          ],
           procedures: [
             "Akses web Disdukcapil Balikpapan untuk antrean online.",
             'Pilih layanan "KTP Elektronik Baru".',

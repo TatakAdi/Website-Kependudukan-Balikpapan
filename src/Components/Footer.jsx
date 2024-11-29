@@ -67,7 +67,7 @@ const Footer = () => {
           <div className="map-container">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255296.65785763602!2d116.72756613581325!3d-1.1531483559001474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2df1468cb12aa245%3A0x22ca51fc7271626c!2sDinas%20Kependudukan%20Dan%20Catatan%20Sipil%20Balikpapan!5e0!3m2!1sid!2sid!4v1732710716183!5m2!1sid!2sid"
-              allowfullscreen
+              allowFullScreen
               loading="lazy"
             ></iframe>
           </div>
