@@ -1,86 +1,77 @@
 import React from "react";
-import Coding from "./assets/coding.svg";
-import meme from "./assets/meme.svg";
+import { useParams, Link } from "react-router-dom";
 import Header from "./Components/Header";
+import berita from "./data/berita.json";
 
 const BeritaKonten = () => {
+  const { id } = useParams(); // Mengambil ID dari URL
+  const beritaUtama = berita.find((item) => item.id === parseInt(id)); // Cari berita berdasarkan ID
+
+  // Jika berita tidak ditemukan
+  if (!beritaUtama) {
+    return (
+      <div className="flex flex-col items-center justify-center h-screen">
+        <Header />
+        <h1 className="text-2xl font-bold">Berita tidak ditemukan</h1>
+        <Link
+          to="/"
+          className="text-blue-500 hover:underline mt-4 block text-lg"
+        >
+          Kembali ke Beranda
+        </Link>
+      </div>
+    );
+  }
+
   return (
-    <div className="flex flex-col ml-8 lg:flex-row gap-8 p-2 mt-20">
+    <div className="flex flex-col lg:flex-row w-full items-center justify-start gap-10 p-2 mt-16">
       <header>
         <Header />
       </header>
       {/* Bagian Utama */}
-      <div className="lg:w-[600px] h-[1400px] bg-gray-100 rounded-lg overflow-hidden shadow-md">
+      <div className="lg:w-[600px] bg-gray-100 rounded-lg overflow-hidden shadow-md">
         <img
-          src={Coding}
-          alt="Gambar Utama"
+          src={beritaUtama.image} // Path dari JSON
+          alt={`Gambar ${beritaUtama.judul}`}
           className="w-full h-[500px] object-cover"
         />
         <div className="p-6">
-          <h2 className="p-10 text-xl font-bold mb-4">
-            LOREM IPSUM DOLOR SIT AMET
-          </h2>
-          <p className="text-gray-700 text-justify p-10">
-            Lorem ipsum dolor sit amet consectetur. Non nisi non mattis
-            habitasse. Quis sit quis risus posuere purus aenean. Aliquam
-            adipiscing enim consequat proin. Aliquet interdum elit nullam orci
-            mollis sit velit. Vitae et duis enim bibendum tellus duis in nunc.
-            Vestibulum purus ultricies quis euismod amet molestie fames. Lectus
-            tempus sit vel scelerisque vulputate accumsan placerat. Dictum
-            mauris consectetur arcu est. Consequat sem volutpat felis tincidunt
-            ultricies. Aliquam magna sed suspendisse risus tortor. Iaculis
-            ultrices vitae lacus sed curabitur cursus ullamcorper. Risus a risus
-            enim quam viverra. Ullamcorper turpis tellus leo viverra id
-            porttitor sollicitudin massa eu. Sed velit libero pellentesque
-            posuere cursus malesuada neque risus elit. Vel felis nibh semper eu.
-            Vivamus feugiat semper et dignissim placerat pulvinar odio mauris.
-            Faucibus parturient et tincidunt amet diam vitae habitant. Egestas
-            sit ut dignissim fames cursus nunc senectus laoreet aliquam.
-            Malesuada ullamcorper id tristique vitae sagittis natoque nam quam
-            scelerisque. Lorem at nisl diam vel rhoncus vulputate nunc etiam. Ac
-            ultricies nisi facilisi rhoncus. Egestas tempus tellus morbi ornare.
-            Sed sed mattis ultricies consectetur quis tincidunt pharetra. A
-            faucibus eu morbi aliquam nibh nisl. Vel magna velit urna lorem
-            nulla rhoncus tellus fames sagittis. Venenatis nullam purus et enim
-            donec. Amet pellentesque sed condimentum volutpat adipiscing. Id
-            facilisi sit a morbi in. Sapien bibendum posuere iaculis tellus
-            feugiat aliquam viverra.
-          </p>
+          <h2 className="text-xl font-bold mb-4">{beritaUtama.judul}</h2>
+          <p className="text-gray-700 text-justify">{beritaUtama.konten}</p>
         </div>
       </div>
 
       {/* Bagian Samping */}
-      <div className="w-full lg:w-1/3 mt-28 space-y-6">
-        {/* Konten Gambar Samping */}
-        <div className="flex mb-16 bg-gray-100 mx-auto w-full lg:ml-20 lg:w-[524px] h-auto lg:h-[500px] rounded-lg overflow-hidden shadow-md">
-          <img
-            src={meme}
-            alt="Gambar Samping"
-            className="w-full h-auto lg:w-[600px] lg:h-full object-cover"
-          />
-        </div>
+      <div className="w-full lg:w-1/3 space-y-10">
+        {/* Berita Terkait */}
+        {berita
+          .filter((item) => item.id !== parseInt(id))
+          .slice(0, 3)
+          .map((item) => (
+            <div
+              key={item.id}
+              className="flex flex-col sm:flex-row bg-gray-100 mx-auto w-full sm:w-[600px] rounded-lg overflow-hidden shadow-md"
+            >
+              <img
+                src={item.image}
+                alt={`Gambar Terkait ${item.id}`}
+                className="w-full sm:w-1/3 h-full object-cover"
+              />
 
-        {/* Konten Terkait */}
-        {[1, 2, 3].map((item) => (
-          <div
-            key={item}
-            className="flex flex-col sm:flex-row bg-gray-100 mx-auto w-full sm:w-[600px] h-auto rounded-lg overflow-hidden shadow-md"
-          >
-            <img
-              src={Coding}
-              alt={`Gambar Terkait ${item}`}
-              className="w-full sm:w-1/3 h-full object-cover"
-            />
-            <div className="p-4 w-full sm:w-2/3">
-              <h3 className="font-bold text-lg sm:text-2xl">
-                Lorem ipsum dolor sit amet consectetur.
-              </h3>
-              <p className="text-gray-500 text-sm sm:text-base">
-                Lorem ipsum dolor sit amet consectetur.
-              </p>
+              <div className="p-4 w-full sm:w-2/3">
+                <h3 className="font-bold text-lg sm:text-2xl">{item.judul}</h3>
+                <p className="text-gray-500 text-sm sm:text-base">
+                  {item.konten.substring(0, 100)}...
+                </p>
+                <Link
+                  to={`/berita/${item.id}`}
+                  className="text-blue-500 hover:underline mt-2 block"
+                >
+                  Baca Selengkapnya
+                </Link>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
       </div>
     </div>
   );
