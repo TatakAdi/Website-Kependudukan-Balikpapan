@@ -37,10 +37,10 @@ const Footer = () => {
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
         {/* Media Sosial */}
         <div>
-          <h3 className="text-lg font-semibold mb-4 text-white">
+          <h3 className="text-lg font-semibold mb-2 text-white text-center">
             For More Information
           </h3>
-          <p className="text-white">Visit Our Social Media</p>
+          <p className="text-white text-center">Visit Our Social Media</p>
           <div className="flex flex-wrap gap-4 mt-4 social-icons pl-5">
             {socialLinks.map((social, index) => (
               <a

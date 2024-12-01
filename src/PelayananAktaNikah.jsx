@@ -58,7 +58,7 @@ const Pelayanan = () => {
     <>
       <Header />
 
-      <div className="w-full p-8 bg-white rounded-md container mx-auto">
+      <div className="w-full p-8 bg-white rounded-md container mx-auto mt-20">
         <h2 className="flex justify-start text-4xl font-bold mb-6">
           Layanan Akta Nikah
         </h2>
