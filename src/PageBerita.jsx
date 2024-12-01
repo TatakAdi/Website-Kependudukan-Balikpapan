@@ -2,20 +2,32 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Header from "./Components/Header";
 import beritaData from "./data/berita.json"; // Ganti dengan path JSON Anda
+import Footer from "./Components/Footer";
 
 // Transform data JSON agar sesuai dengan struktur Card
 const cardData = beritaData.map((item) => ({
   title: item.judul,
-  description: item.konten.substring(0, 100) + "...", // Potong deskripsi
+  description: item.konten.substring(0, 100) + "...", // Potong konten untuk ringkasan
   link: `/berita/${item.id}`,
   image: item.image,
+  admin: item.admin,
+  fotoAdmin: item.fotoAdmin,
 }));
 
-const Card = ({ title, description, link, image }) => (
-  <div className="card border border-gray-300 rounded-lg p-3 shadow-md bg-gray-200 text-left flex flex-col justify-between min-h-[200px]">
-    <img src={image} alt={title} className="w-full rounded-lg mb-3" />
+
+const Card = ({ title, description, link, image, admin, fotoAdmin }) => (
+  <div className="card border border-gray-300 rounded-lg p-3 shadow-md bg-gray-200 text-left flex flex-col justify-between min-h-[250px]">
+    <img src={image} alt={title} className="w-full rounded-lg mb-3 h-40 object-cover" />
     <h3 className="font-semibold text-lg mb-2">{title}</h3>
-    <p>{description}</p>
+    <p className="text-sm text-gray-700">{description}</p>
+    <div className="flex items-center mt-2">
+      <img
+        src={fotoAdmin}
+        alt={admin}
+        className="w-8 h-8 rounded-full mr-2 object-cover"
+      />
+      <p className="text-sm text-gray-600">Oleh {admin}</p>
+    </div>
     <Link
       to={link}
       className="text-green-700 font-semibold text-lg mt-auto hover:underline"
@@ -24,6 +36,7 @@ const Card = ({ title, description, link, image }) => (
     </Link>
   </div>
 );
+
 
 const BeritaPage = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -47,6 +60,7 @@ const BeritaPage = () => {
   };
 
   return (
+    <>
     <div className="container mt-20 text-center text-gray-800">
       <header>
         <Header />
@@ -59,14 +73,25 @@ const BeritaPage = () => {
           {/* Pagination */}
           <div className="mt-auto flex justify-center gap-2">
             <button
-              className="bg-gray-200 text-black py-2 px-4 rounded-lg shadow-md hover:bg-gray-300"
+              className={`bg-gray-200 text-black py-2 px-4 rounded-lg shadow-md ${
+                currentPage === 1
+                  ? "opacity-50 cursor-not-allowed"
+                  : "hover:bg-gray-300"
+              }`}
               onClick={prevPage}
             >
               ⇦ Sebelumnya
             </button>
             <button
-              className="bg-gray-200 text-black py-2 px-4 rounded-lg shadow-md hover:bg-gray-300"
+              className={`bg-gray-200 text-black py-2 px-4 rounded-lg shadow-md ${
+                currentPage === Math.ceil(cardData.length / itemsPerPage)
+                  ? "opacity-50 cursor-not-allowed"
+                  : "hover:bg-gray-300"
+              }`}
               onClick={nextPage}
+              disabled={
+                currentPage === Math.ceil(cardData.length / itemsPerPage)
+              }
             >
               Selanjutnya ⇨
             </button>
@@ -81,6 +106,8 @@ const BeritaPage = () => {
         </div>
       </main>
     </div>
+    <Footer/>
+    </>
   );
 };
 
