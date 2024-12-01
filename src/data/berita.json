@@ -1,56 +1,74 @@
 [
-    {
-      "id": 1,
-      "judul": "Cara Mengurus KTP Baru",
-      "konten": "Untuk mengurus KTP baru, Anda perlu membawa fotokopi KK, pas foto 3x4 sebanyak 2 lembar, dan mengisi formulir yang tersedia di kantor kelurahan. Selain itu, pastikan Anda membawa dokumen asli yang diperlukan untuk verifikasi data. Proses pengurusan biasanya memakan waktu 1 hingga 2 minggu, tergantung pada antrian dan kelengkapan dokumen yang Anda bawa.",
-      "image": "/images/e-ktp.jpg"
-    },
-    {
-      "id": 2,
-      "judul": "Jam Operasional Kantor Kelurahan",
-      "konten": "Kantor kelurahan buka setiap hari Senin hingga Jumat, pukul 08:00 hingga 16:00. Hari Sabtu dan Minggu tutup. Selama jam operasional, Anda dapat mengurus berbagai administrasi kependudukan, pembuatan surat keterangan, serta layanan lainnya. Pastikan Anda datang pada jam kerja agar mendapatkan pelayanan yang optimal.",
-      "image": "/images/JamOperasional.jpg"
-    },
-    {
-      "id": 3,
-      "judul": "Prosedur Perpanjangan SIM",
-      "konten": "Perpanjangan SIM dapat dilakukan di Polres setempat. Bawa KTP asli, SIM lama, serta surat keterangan sehat dari dokter. Selain itu, pastikan Anda melakukan pembayaran administrasi yang diperlukan sesuai dengan jenis SIM yang diperpanjang. Setelah proses perpanjangan selesai, SIM baru akan langsung diterbitkan pada hari yang sama.",
-      "image": "/images/SIM.jpg"
-    },
-    {
-      "id": 4,
-      "judul": "Pelayanan Posyandu di Kelurahan",
-      "konten": "Posyandu diadakan setiap hari Rabu minggu pertama setiap bulan, mulai pukul 09:00 hingga 12:00 di Balai Kelurahan. Pelayanan ini meliputi pemeriksaan kesehatan ibu dan anak, imunisasi, serta pemberian makanan tambahan. Pastikan Anda membawa Kartu Menuju Sehat (KMS) untuk anak, serta identitas diri untuk ibu.",
-      "image": "/images/posyandu.png"
-    },
-    {
-      "id": 5,
-      "judul": "Pengaduan Masalah Lingkungan",
-      "konten": "Jika Anda memiliki masalah lingkungan, seperti sampah atau saluran air tersumbat, silakan hubungi RT/RW setempat atau datang langsung ke kantor kelurahan. Layanan pengaduan ini bertujuan untuk meningkatkan kualitas lingkungan dan kenyamanan bersama. Pengaduan akan segera ditindaklanjuti oleh petugas terkait.",
-      "image": "/images/DLH.jpg"
-    },
-    {
-      "id": 6,
-      "judul": "Layanan Online Pembuatan KK",
-      "konten": "Kini pembuatan KK dapat dilakukan secara online melalui website resmi kelurahan. Upload dokumen yang diperlukan dan tunggu konfirmasi dari petugas. Setelah proses verifikasi selesai, KK baru akan dikirimkan ke alamat Anda. Layanan ini memudahkan warga untuk melakukan pengurusan tanpa perlu datang langsung ke kantor kelurahan.",
-      "image": "/images/KK.jpg"
-    },
-    {
-      "id": 7,
-      "judul": "Pengumuman Jadwal Pemilu",
-      "konten": "Pemilu akan dilaksanakan pada tanggal 14 Februari 2024. Pastikan Anda sudah terdaftar sebagai pemilih dan cek lokasi TPS di website kami. Kami juga menyediakan informasi mengenai tata cara pemungutan suara serta dokumen yang perlu dibawa ke TPS. Jangan lewatkan kesempatan untuk berpartisipasi dalam pemilu demi masa depan negara.",
-      "image": "/images/pemilu.png"
-    },
-    {
-      "id": 8,
-      "judul": "Layanan Perpustakaan Kelurahan",
-      "konten": "Perpustakaan kelurahan buka setiap hari kerja dari pukul 09:00 hingga 15:00. Tersedia buku bacaan untuk anak-anak hingga dewasa, serta akses komputer untuk belajar atau bekerja. Anda dapat meminjam buku dengan menunjukkan kartu anggota perpustakaan. Pastikan untuk mengembalikan buku tepat waktu agar dapat meminjam buku lainnya.",
-      "image": "/images/perpustakaan.jpg"
-    },
-    {
-      "id": 9,
-      "judul": "Informasi Pendaftaran Sekolah Dasar",
-      "konten": "Pendaftaran sekolah dasar di kelurahan ini dibuka mulai bulan Mei setiap tahun. Pastikan Anda melengkapi dokumen yang diperlukan, seperti akta kelahiran dan kartu keluarga. Kami juga menyediakan layanan bimbingan untuk orang tua yang membutuhkan bantuan dalam proses pendaftaran atau pemilihan sekolah. Pendaftaran dapat dilakukan secara langsung di kantor kelurahan atau melalui website kami.",
-      "image": "/images/sekolah.jpg"
-    }
+  {
+    "id": 1,
+    "judul": "Cara Mengurus KTP Baru",
+    "konten": "Untuk mengurus KTP baru, ada beberapa persyaratan yang perlu Anda penuhi dan langkah-langkah yang harus diikuti. Pertama, pastikan Anda membawa fotokopi Kartu Keluarga (KK) sebagai dokumen utama yang akan digunakan untuk verifikasi data Anda. Jangan lupa juga untuk membawa pas foto ukuran 3x4 sebanyak 2 lembar. Pas foto ini biasanya harus memiliki latar belakang tertentu, sesuai dengan peraturan yang berlaku di wilayah Anda. Oleh karena itu, periksa terlebih dahulu apakah ada ketentuan khusus mengenai warna latar belakang foto. Selain itu, Anda juga perlu mengisi formulir permohonan KTP yang bisa Anda dapatkan di kantor kelurahan atau kecamatan. Formulir ini biasanya berisi data pribadi seperti nama lengkap, tempat dan tanggal lahir, serta alamat tinggal. Pastikan data yang Anda isi sesuai dengan yang tercantum dalam Kartu Keluarga untuk menghindari kesalahan dalam proses penerbitan KTP. Tak kalah penting, bawalah dokumen asli, seperti Kartu Keluarga dan akta kelahiran, untuk proses verifikasi. Petugas di kantor kelurahan atau kecamatan biasanya akan memeriksa dokumen asli Anda untuk memastikan keabsahannya sebelum memproses permohonan KTP baru.Setelah semua dokumen lengkap, serahkan berkas Anda ke petugas pelayanan. Proses pengurusan KTP baru ini biasanya memakan waktu sekitar 1 hingga 2 minggu. Namun, durasi ini bisa bervariasi tergantung pada jumlah antrian di kantor pelayanan tersebut dan kelengkapan dokumen yang Anda serahkan. Jika dokumen tidak lengkap atau ada kesalahan dalam pengisian formulir, prosesnya bisa memakan waktu lebih lama.Untuk memastikan proses berjalan lancar, sebaiknya Anda datang lebih awal ke kantor pelayanan, terutama jika Anda tinggal di daerah dengan jumlah penduduk yang cukup padat. Selain itu, tanyakan kepada petugas terkait langkah-langkah selanjutnya, seperti pengambilan KTP yang sudah jadi atau konfirmasi melalui sistem online, jika tersedia. Dengan mempersiapkan segala sesuatunya dengan baik, proses pengurusan KTP baru Anda akan lebih cepat dan mudah.",
+    "image": "/images/e-ktp.jpg",
+    "admin" : "admin1",
+    "fotoAdmin" : "/profile/admin1.jpg"
+  },
+  {
+    "id": 2,
+    "judul": "Jam Operasional Kantor Kelurahan",
+    "konten": "Kantor kelurahan buka setiap hari Senin hingga Jumat, pukul 08:00 hingga 16:00. Hari Sabtu dan Minggu tutup. Selama jam operasional, Anda dapat mengurus berbagai administrasi kependudukan, pembuatan surat keterangan, serta layanan lainnya. Pastikan Anda datang pada jam kerja agar mendapatkan pelayanan yang optimal.",
+    "image": "/images/JamOperasional.jpg",
+          "admin" : "admin1",
+    "fotoAdmin" : "/profile/admin1.jpg"
+  },
+  {
+    "id": 3,
+    "judul": "Prosedur Perpanjangan SIM",
+    "konten": "Perpanjangan SIM dapat dilakukan di Polres setempat. Bawa KTP asli, SIM lama, serta surat keterangan sehat dari dokter. Selain itu, pastikan Anda melakukan pembayaran administrasi yang diperlukan sesuai dengan jenis SIM yang diperpanjang. Setelah proses perpanjangan selesai, SIM baru akan langsung diterbitkan pada hari yang sama.",
+    "image": "/images/SIM.jpg",
+          "admin" : "admin1",
+    "fotoAdmin" : "/profile/admin1.jpg"
+  },
+  {
+    "id": 4,
+    "judul": "Pelayanan Posyandu di Kelurahan",
+    "konten": "Posyandu diadakan setiap hari Rabu minggu pertama setiap bulan, mulai pukul 09:00 hingga 12:00 di Balai Kelurahan. Pelayanan ini meliputi pemeriksaan kesehatan ibu dan anak, imunisasi, serta pemberian makanan tambahan. Pastikan Anda membawa Kartu Menuju Sehat (KMS) untuk anak, serta identitas diri untuk ibu.",
+    "image": "/images/posyandu.png",
+          "admin" : "admin1",
+    "fotoAdmin" : "/profile/admin1.jpg"
+  },
+  {
+    "id": 5,
+    "judul": "Pengaduan Masalah Lingkungan",
+    "konten": "Jika Anda memiliki masalah lingkungan, seperti sampah atau saluran air tersumbat, silakan hubungi RT/RW setempat atau datang langsung ke kantor kelurahan. Layanan pengaduan ini bertujuan untuk meningkatkan kualitas lingkungan dan kenyamanan bersama. Pengaduan akan segera ditindaklanjuti oleh petugas terkait.",
+    "image": "/images/DLH.jpg",
+          "admin" : "admin1",
+    "fotoAdmin" : "/profile/admin1.jpg"
+  },
+  {
+    "id": 6,
+    "judul": "Layanan Online Pembuatan KK",
+    "konten": "Kini pembuatan KK dapat dilakukan secara online melalui website resmi kelurahan. Upload dokumen yang diperlukan dan tunggu konfirmasi dari petugas. Setelah proses verifikasi selesai, KK baru akan dikirimkan ke alamat Anda. Layanan ini memudahkan warga untuk melakukan pengurusan tanpa perlu datang langsung ke kantor kelurahan.",
+    "image": "/images/KK.jpg",
+          "admin" : "admin1",
+    "fotoAdmin" : "/profile/admin1.jpg"
+  },
+  {
+    "id": 7,
+    "judul": "Pengumuman Jadwal Pemilu",
+    "konten": "Pemilu akan dilaksanakan pada tanggal 14 Februari 2024. Pastikan Anda sudah terdaftar sebagai pemilih dan cek lokasi TPS di website kami. Kami juga menyediakan informasi mengenai tata cara pemungutan suara serta dokumen yang perlu dibawa ke TPS. Jangan lewatkan kesempatan untuk berpartisipasi dalam pemilu demi masa depan negara.",
+    "image": "/images/pemilu.png",
+          "admin" : "admin1",
+    "fotoAdmin" : "/profile/admin1.jpg"
+  },
+  {
+    "id": 8,
+    "judul": "Layanan Perpustakaan Kelurahan",
+    "konten": "Perpustakaan kelurahan buka setiap hari kerja dari pukul 09:00 hingga 15:00. Tersedia buku bacaan untuk anak-anak hingga dewasa, serta akses komputer untuk belajar atau bekerja. Anda dapat meminjam buku dengan menunjukkan kartu anggota perpustakaan. Pastikan untuk mengembalikan buku tepat waktu agar dapat meminjam buku lainnya.",
+    "image": "/images/perpustakaan.jpg",
+          "admin" : "admin1",
+    "fotoAdmin" : "/profile/admin1.jpg"
+  },
+  {
+    "id": 9,
+    "judul": "Informasi Pendaftaran Sekolah Dasar",
+    "konten": "Pendaftaran sekolah dasar di kelurahan ini dibuka mulai bulan Mei setiap tahun. Pastikan Anda melengkapi dokumen yang diperlukan, seperti akta kelahiran dan kartu keluarga. Kami juga menyediakan layanan bimbingan untuk orang tua yang membutuhkan bantuan dalam proses pendaftaran atau pemilihan sekolah. Pendaftaran dapat dilakukan secara langsung di kantor kelurahan atau melalui website kami.",
+    "image": "/images/sekolah.jpg",
+          "admin" : "admin1",
+    "fotoAdmin" : "/profile/admin1.jpg"
+  }
 ]
