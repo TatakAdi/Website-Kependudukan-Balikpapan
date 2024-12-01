@@ -26,16 +26,29 @@ const DataStatistik = () => {
         style: {
           fontSize: "12px",
         },
-        rotate: -45,
+        rotate: -30, 
         hideOverlappingLabels: true,
       },
     },
     yaxis: {
       labels: {
-        formatter: (value) => `${value / 1000}k`,
+        formatter: (value) => `${value / 1000}k`, 
       },
     },
     colors: ["#1E40AF", "#10B981", "#3B82F6"],
+    dataLabels: {
+      enabled: true,
+      style: {
+        colors: ["#000"], 
+      },
+      offsetY: -5, 
+    },
+    tooltip: {
+      enabled: true,
+      y: {
+        formatter: (val) => `${val.toLocaleString()}`, 
+      },
+    },
   };
 
   const barChartSeries = [
@@ -68,12 +81,13 @@ const DataStatistik = () => {
         <Header />
       </header>
       <div className="lg:w-full bg-white rounded-lg overflow-x-auto shadow-md">
-        <div className="min-w-[600px]">
+        <div className="min-w-[800px]">
+          {" "}
           <Chart
             options={barChartOptions}
             series={barChartSeries}
             type="bar"
-            height={350}
+            height={400}
           />
         </div>
       </div>
@@ -89,7 +103,7 @@ const DataStatistik = () => {
         />
       </div>
 
-      {/* New Statistics Table */}
+      {/* Statistik Tabel */}
       <div className="lg:w-full bg-white rounded-lg overflow-hidden shadow-md mt-10 p-6">
         <h2 className="text-center text-lg font-bold mb-4">
           Nilai Unsur Pelayanan Dinas Kependudukan dan Pencatatan Sipil Tahun

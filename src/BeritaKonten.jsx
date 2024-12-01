@@ -5,8 +5,8 @@ import berita from "./data/berita.json";
 import Footer from "./Components/Footer";
 
 const BeritaKonten = () => {
-  const { id } = useParams(); // Mengambil ID dari URL
-  const beritaUtama = berita.find((item) => item.id === parseInt(id)); // Cari berita berdasarkan ID
+  const { id } = useParams(); 
+  const beritaUtama = berita.find((item) => item.id === parseInt(id));
 
   // Jika berita tidak ditemukan
   if (!beritaUtama) {
@@ -33,7 +33,7 @@ const BeritaKonten = () => {
         {/* Bagian Utama */}
         <div className="flex-grow lg:w-[600px] bg-gray-100 rounded-lg overflow-hidden shadow-md">
           <img
-            src={beritaUtama.image} // Path dari JSON
+            src={beritaUtama.image}
             alt={`Gambar ${beritaUtama.judul}`}
             className="w-full h-[500px] object-cover"
           />
