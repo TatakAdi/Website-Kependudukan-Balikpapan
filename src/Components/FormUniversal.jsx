@@ -1,11 +1,12 @@
 import React, { useState } from "react";
+import "../styles/formUniv.css";
 
 const Pelayanan = () => {
   const [usia, setUsia] = useState(10);
 
   return (
     <>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6  grid-flow-row mainbox">
         <div>
           <label className="flex justify-start  text-sm font-medium text-gray-700">
             Nama Depan & Nama Tengah
@@ -67,8 +68,8 @@ const Pelayanan = () => {
           />
         </div>
 
-        <div className="flex gap-6 col-span-2">
-          <div className="w-full sm:w-1/2">
+        <div className="flex gap-6 col-span-2 genAge">
+          <div className="w-full ">
             <label className="flex justify-start text-sm font-medium text-gray-700">
               Jenis Kelamin
             </label>
@@ -91,7 +92,7 @@ const Pelayanan = () => {
               </label>
             </div>
           </div>
-          <div className="w-1/2">
+          <div className="w-full">
             <label className="flex justify-start text-sm font-medium text-gray-700">
               Usia
             </label>
@@ -121,7 +122,7 @@ const Pelayanan = () => {
             </div>
           </div>
         </div>
-        <div className="flex gap-6 col-span-2">
+        <div className="flex gap-6 col-span-2 AlamatTelp">
           <div className="col-span-2 w-full">
             <label className="flex justify-start text-sm font-medium text-gray-700">
               Alamat
