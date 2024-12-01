@@ -39,18 +39,18 @@ function FaqBox() {
     },
     {
       question:
-        "bagaimana cara mengganti foto ktp dari yang tidak berhijab kemudian berhijab?",
+        "Bagaimana cara mengganti foto ktp dari yang tidak berhijab kemudian berhijab?",
       answer:
         'Anda bisa mengajukan pelayanan "Ganti EKTP karena perubahan data" jika ingin melakukan perubahan foto atau data-data yang lainnya',
     },
     {
-      question: "apa saja syarat membuat akta kelahiran?",
+      question: "Apa saja syarat-syarat untuk membuat akta kelahiran?",
       answer:
-        "Yang jelas punya anak, ama antar pasangan udah nikah, kan malu yak hamil diluar nikah. Mana mulut orang Indo kebanyakan bikin geleng-geleng kepala semua",
+        "Yang jelas punya anak, sama antar pasangan udah nikah, kan malu yak hamil diluar nikah. Mana mulut orang Indo kebanyakan bikin geleng-geleng kepala semua",
     },
     {
       question:
-        "bagaimana syarat gabung KK setelah menikah? Jika suami saya berasal dari Kabupaten/Kota yang Berbeda ?",
+        "Bagaimana syarat gabung KK setelah menikah? Jika suami saya berasal dari Kabupaten/Kota yang Berbeda ?",
       answer:
         "Anda bisa meminta suami anda untuk melakukan pergantian EKTP dengan menyesuaikan data tempat tinggal yang disetujui oleh Anda dan Suami Anda, baru setelah itu Anda bisa mengajukan pelayanan pembuatan Kartu Keluarga baru",
     },

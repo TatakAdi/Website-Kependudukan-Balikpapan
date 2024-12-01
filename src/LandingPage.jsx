@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useLocation, Link } from "react-router-dom";
 import beritaData from "./data/berita.json";
-import fotoTest from "./assets/Coding3.jpg";
+import fotoTest from "./assets/Pengenalan.jpg";
 import Header from "./Components/Header";
 import FormBox from "./Components/formBox";
 import BoxBerita from "./Components/berita";
