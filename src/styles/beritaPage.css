@@ -1,79 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Koulen&family=Odor+Mean+Chey&display=swap");
-
-.container {
-  color: #333;
-  text-align: center;
-  margin-top: 80px;
-}
-
-.main {
-  display: flex;
-  justify-content: center;
-  padding: 20px;
-  gap: 20px; 
-}
-
-.largeCard {
-  flex: 0 0 55%; 
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.smallCards {
-  display: grid;
-  grid-template-columns: 1fr 1fr; 
-  gap: 10px; 
-}
-
-.card {
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 10px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  background-color: #DADDEB;
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: 200px; 
-}
-
-.cardTitle {
-  font-weight: bold;
-  font-size: 18px;
-  margin-bottom: 10px;
-}
-
-.image {
-  width: 100%;
-  border-radius: 8px;
-  margin-bottom: 10px;
-}
-
-.link {
-  color: #859F3D;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 16px;
-  margin-top: auto; 
-}
-
-.pagination {
-  margin-top: auto;
-}
-
-.paginationButton {
-  background-color: #DADDEB;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
-  cursor: pointer;
-  margin: 5px;
-  font-weight: bold;
-}
-
-.paginationButton:hover {
-  background-color: #DADDEB;
+@media screen and (max-width: 1025px) {
+  .pageUtama {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }

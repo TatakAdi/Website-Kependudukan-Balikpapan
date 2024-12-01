@@ -1,0 +1,17 @@
+@media screen and (max-width: 768px) {
+  .mainbox {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .genAge {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .AlamatTelp {
+    display: flex;
+    flex-direction: column;
+  }
+}
