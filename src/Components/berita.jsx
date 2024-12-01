@@ -1,18 +1,17 @@
-import fotoTest from "../assets/Coding3.jpg";
 import "../styles/berita.css";
 import { Link } from "react-router-dom";
 
-function berita(props) {
+function berita({ id, title, isi, img }) {
   return (
     <div className="kotakBerita">
       <div className="img-container-berita">
-        <img src={fotoTest} alt="" />
+        <img src={img} alt={title} />
       </div>
       <div className="IsiBerita">
-        <h4>{props.title}</h4>
-        <p>{props.isi}</p>
+        <h4>{title}</h4>
+        <p>{isi}</p>
         <h6>
-          <Link to="/berita/berita-konten">Baca Selengkapnya</Link>
+          <Link to={`/berita/${id}`}>Baca Selengkapnya</Link>
         </h6>
       </div>
     </div>

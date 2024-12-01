@@ -1,5 +1,6 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useLocation, Link } from "react-router-dom";
+import beritaData from "./data/berita.json";
 import fotoTest from "./assets/Coding3.jpg";
 import Header from "./Components/Header";
 import FormBox from "./Components/formBox";
@@ -9,7 +10,26 @@ import Footer from "./Components/Footer";
 import "./styles/landingPage.css";
 
 function Mainpage() {
+  const [berita, setBerita] = useState([]);
   const location = useLocation(); // Menangkap informasi tentang URL saat ini
+
+  useEffect(() => {
+    const fetchBerita = async () => {
+      setBerita(beritaData);
+    };
+
+    fetchBerita();
+  }, []);
+
+  const shuffleArray = (array) => {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]]; // Swap elemen
+    }
+    return array;
+  };
+
+  const randomBerita = shuffleArray([...berita]).slice(0, 3);
 
   useEffect(() => {
     // Fungsi untuk scroll ke elemen FAQ
@@ -37,23 +57,17 @@ function Mainpage() {
               <span className="text-purple-400"> Kota Balikpapan</span>
             </h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur. Volutpat mattis congue
-              maecenas sed egestas eget. Luctus velit ac maecenas sed justo
-              orci. Aliquam et malesuada maecenas est nisl semper venenatis
-              consectetur. Dolor sed dolor ultricies dolor posuere. Eros eu
-              ornare tincidunt pretium. Mattis vitae condimentum nibh
-              suspendisse velit. Quis aliquam eleifend quis placerat cras ut
-              tristique nullam. Pulvinar sollicitudin leo libero dui sit urna id
-              nisi. Molestie ac ut nunc sagittis tellus. Massa cursus nisl
-              mauris amet aliquet aliquam dignissim tristique iaculis. Amet id
-              sit amet elit orci quam mauris ultrices faucibus. Malesuada enim
-              enim sagittis enim ut vel. In vestibulum id sed sagittis
-              consectetur lectus suscipit pharetra. Sed amet dui nam vel
-              ultrices morbi purus.
+              Disdukcapil Kota Balikpapan Adalah Lembaga Pemerintahan Dibidang
+              Kependudukan Dan Pencatatan Sipil Moto Pelayanan Disdukcapil Kota
+              Balikpapan :
+              <ul className="pl-10 list-disc">
+                <li>Sederhana</li>
+                <li>Mudah</li>
+                <li>Aman</li>
+                <li>Ramah</li>
+                <li>Transparan</li>
+              </ul>
             </p>
-            <button className="AboutUs">
-              Tentang Kami <span className="Arrow"></span>
-            </button>
           </div>
           <div id="VisiMisi">
             <div className="img-container">
@@ -87,18 +101,15 @@ function Mainpage() {
         <div className="Berita">
           <h3>Berita</h3>
           <div className="Berita-container">
-            <BoxBerita
-              title="Lorem ipsum dolor sit amet"
-              isi="Lorem ipsum dolor sit amet consectetur. Vitae feugiat morbi at pellentesque sed egestas lacus interdum rhoncus. Duis tincidunt nibh malesuada id ut aliquet egestas massa."
-            />
-            <BoxBerita
-              title="Lorem ipsum dolor sit amet"
-              isi="Lorem ipsum dolor sit amet consectetur. Vitae feugiat morbi at pellentesque sed egestas lacus interdum rhoncus. Duis tincidunt nibh malesuada id ut aliquet egestas massa."
-            />
-            <BoxBerita
-              title="Lorem ipsum dolor sit amet"
-              isi="Lorem ipsum dolor sit amet consectetur. Vitae feugiat morbi at pellentesque sed egestas lacus interdum rhoncus. Duis tincidunt nibh malesuada id ut aliquet egestas massa."
-            />
+            {randomBerita.slice(0, 3).map((item) => (
+              <BoxBerita
+                key={item.id}
+                id={item.id}
+                title={item.judul}
+                isi={item.konten.slice(0, 100) + "..."}
+                img={item.image}
+              />
+            ))}
           </div>
           <Link to="/berita" className="toPageBerita">
             Selengkapnya
