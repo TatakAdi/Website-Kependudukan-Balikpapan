@@ -48,3 +48,27 @@
 .IsiBerita h6:hover {
   color: #806bb4;
 }
+
+@media screen and (max-width: 1250px) {
+  .kotakBerita {
+    display: flex;
+    flex-direction: row;
+    max-width: 500px;
+  }
+
+  .img-container-berita {
+    width: 200px;
+    max-height: 200px;
+    object-fit: cover;
+  }
+  .img-container-berita img {
+    height: 170px;
+    width: 150px;
+    object-fit: cover;
+  }
+
+  .IsiBerita {
+    max-height: 150px;
+    margin-bottom: 10px;
+  }
+}

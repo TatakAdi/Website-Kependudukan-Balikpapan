@@ -95,7 +95,11 @@ footer iframe {
 
 @media (max-width: 768px) {
   footer .container {
+    align-items: center;
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+  .Lokasi h3 {
+    text-align: center;
   }
 }

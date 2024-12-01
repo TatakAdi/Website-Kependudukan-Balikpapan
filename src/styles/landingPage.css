@@ -100,6 +100,7 @@
 }
 
 .Berita {
+  width: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -140,4 +141,43 @@
   font-family: "Koulen", sans-serif;
   font-size: 1.9rem;
   margin: 50px 0 20px 30px;
+}
+
+@media screen and (max-width: 1250px) {
+  .Berita-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .Pengenalan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #VisiMisi {
+    margin-right: 0;
+  }
+
+  .FormBox-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .FormBox {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .Pengenalan {
+    margin-top: 70px;
+    align-items: center;
+  }
 }

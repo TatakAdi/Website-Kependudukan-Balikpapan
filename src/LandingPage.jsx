@@ -49,7 +49,7 @@ function Mainpage() {
   return (
     <>
       <Header />
-      <main>
+      <main className="w-full">
         <div className="Pengenalan">
           <div id="AboutUs">
             <h3>

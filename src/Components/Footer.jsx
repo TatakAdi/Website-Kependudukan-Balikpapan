@@ -34,7 +34,7 @@ const Footer = () => {
 
   return (
     <footer className="text-white mt-16">
-      <div className="container mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+      <div className="container w-full mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
         {/* Media Sosial */}
         <div>
           <h3 className="text-lg font-semibold mb-2 text-white text-center">
@@ -62,7 +62,7 @@ const Footer = () => {
         </div>
 
         {/* Lokasi */}
-        <div>
+        <div className="Lokasi">
           <h3 className="text-lg font-semibold mb-4 text-white">Our Office</h3>
           <div className="map-container">
             <iframe
