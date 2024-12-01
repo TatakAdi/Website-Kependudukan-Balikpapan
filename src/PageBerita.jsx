@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Header from "./Components/Header";
-import beritaData from "./data/berita.json"; 
+import beritaData from "./data/berita.json";
 import Footer from "./Components/Footer";
 
-// Transform data JSON agar sesuai dengan struktur Card
 const cardData = beritaData.map((item) => ({
   title: item.judul,
-  description: item.konten.substring(0, 100) + "...", 
+  description: item.konten.substring(0, 100) + "...",
   link: `/berita/${item.id}`,
   image: item.image,
   admin: item.admin,
